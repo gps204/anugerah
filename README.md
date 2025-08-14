@@ -1,117 +1,122 @@
-<p align="center">
-  <img src="https://i.ibb.co/1tRYZP5R/Velstore-logo-v1.png" alt="Velstore open-source multi-vendor Laravel eCommerce solution">
-</p>
+# Proyek Anugerah - Sistem Katalog Produk & CMS
 
-<p align="center">
+Aplikasi web berbasis Laravel yang berfungsi sebagai katalog produk dan sistem manajemen konten (CMS). Fokus utama aplikasi ini adalah untuk menampilkan produk-produk (khususnya di bidang alat kesehatan) dan memungkinkan pengunjung untuk meminta penawaran langsung melalui WhatsApp.
 
-  <a href="https://packagist.org/packages/velstorelabs/velstore">
-    <img src="https://poser.pugx.org/velstorelabs/velstore/d/total" alt="Velstore Packagist Downloads">
-  </a>
-  
-  <a href="https://github.com/velstorelabs/velstore/releases">
-    <img src="https://poser.pugx.org/velstorelabs/velstore/v/stable" alt="Velstore Latest Stable Version">
-  </a>
+Aplikasi ini juga dilengkapi dengan panel admin yang komprehensif untuk mengelola seluruh konten situs, mulai dari produk, kategori, blog, hingga halaman statis.
 
-  <a href="https://github.com/velstorelabs/velstore/actions/workflows/ci.yml">
-    <img src="https://github.com/velstorelabs/velstore/actions/workflows/ci.yml/badge.svg" alt="CI status for Velstore">
-  </a>
+## Fitur Utama
 
-  <a href="https://github.com/velstorelabs/velstore/blob/master/LICENSE">
-    <img src="https://poser.pugx.org/velstorelabs/velstore/license" alt="License">
-  </a>
-</p>
+### Frontend (Sisi Pengunjung)
+- **Katalog Produk**: Menampilkan daftar produk dengan filter berdasarkan kategori.
+- **Halaman Detail Produk**: Halaman lengkap untuk setiap produk, termasuk galeri gambar, deskripsi singkat, dan deskripsi lengkap.
+- **Permintaan Penawaran via WhatsApp**: Tombol "Minta Penawaran" yang mengarahkan pengguna ke WhatsApp dengan pesan yang sudah diisi sebelumnya.
+- **Blog**: Bagian untuk artikel, berita, atau pembaruan terkait perusahaan.
+- **Halaman Statis**: Halaman yang dapat dikelola dari admin panel seperti "Tentang Kami", "Layanan", dan "Kontak".
+- **Desain Responsif**: Tampilan yang beradaptasi dengan baik di berbagai perangkat (desktop, tablet, mobile).
 
-<p align="center">
-  <img src="https://i.ibb.co/9mL3YZQV/velstore-demo1-resized.png" alt="Velstore open-source multi-vendor Laravel eCommerce solution demo">
-</p>
+### Backend (Panel Admin)
+- **Dashboard**: Halaman utama admin yang memberikan ringkasan informasi penting.
+- **Manajemen Produk**: Operasi CRUD (Create, Read, Update, Delete) untuk produk.
+- **Manajemen Kategori**: CRUD untuk kategori produk, mendukung struktur induk-anak (subkategori).
+- **Manajemen Merek**: CRUD untuk merek produk.
+- **Manajemen Pesanan**: Melihat detail pesanan atau permintaan penawaran yang masuk.
+- **Manajemen Blog**: CRUD untuk artikel blog.
+- **Manajemen Halaman**: CRUD untuk halaman statis.
+- **Manajemen Menu**: Mengatur struktur menu navigasi utama situs.
+- **Dukungan Multi-bahasa**: Mengelola konten dalam berbagai bahasa.
+- **Pengaturan Situs**: Mengelola konfigurasi umum situs.
 
-Velstore is a powerful and open-source multi-vendor Laravel eCommerce solution. It is fully customizable and ready to use. It is the perfect choice for launching your online store with ease and efficiency.
+## Tumpukan Teknologi (Tech Stack)
 
-## Features
+- **Backend**: PHP 8.x, Laravel 10.x
+- **Frontend**: Blade, HTML5, CSS3, JavaScript, jQuery, Bootstrap
+- **Database**: MySQL / MariaDB
+- **Server Development**: Laragon (atau sejenisnya seperti XAMPP, WAMP)
+- **Paket Utama**:
+  - `yajra/laravel-datatables-oracle`: Untuk tabel data yang interaktif di panel admin.
 
-- Built with Laravel
-- Multi vendor support
-- Multi lingual support  
-- Dedicated Admin, Seller, and Customer panels 
-- Modular and extensible architecture
-- Translated to 19 languages
+## Panduan Instalasi Lokal
 
-### Supported Languages
+Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini di lingkungan pengembangan lokal Anda.
 
-<p align="center" style="display: inline;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" title="English" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/de.svg" title="German" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" title="French" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" title="Spanish" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/nl.svg" title="Dutch" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/it.svg" title="Italian" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" title="Portuguese" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/in.svg" title="Hindi" width="24">
-    &nbsp;&nbsp;&nbsp;
-    <img src="https://flagicons.lipis.dev/flags/4x3/pl.svg" title="Polish" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ru.svg" title="Russian" width="24">
-    &nbsp;&nbsp;&nbsp;
-    <img src="https://flagicons.lipis.dev/flags/4x3/tr.svg" title="Turkish" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/sa.svg" title="Arabic" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ir.svg" title="Persian" width="24">
-    &nbsp;&nbsp;&nbsp;
-    <img src="https://flagicons.lipis.dev/flags/4x3/cn.svg" title="Chinese" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/jp.svg" title="Japanese" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/id.svg" title="Indonesian" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/vi.svg" title="Vietnamese" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/kr.svg" title="Korean" width="24">
-    <img src="https://flagicons.lipis.dev/flags/4x3/th.svg" title="Thai" width="24">
-</p>
+1.  **Clone Repositori**
+    ```bash
+    git clone [URL_REPOSITORI_ANDA]
+    cd anugerah
+    ```
 
+2.  **Install Dependensi**
+    Install dependensi PHP dengan Composer dan dependensi JavaScript dengan NPM.
+    ```bash
+    composer install
+    npm install
+    ```
 
-## Trending Products
+3.  **Konfigurasi Lingkungan**
+    Salin file `.env.example` menjadi `.env`.
+    ```bash
+    # Untuk Windows
+    copy .env.example .env
 
-<p align="center">
-  <img src="https://i.ibb.co/7Jy8q2CS/trending-product-1.png" alt="Velstore open-source multi-vendor Laravel eCommerce solution demo">
-</p>
+    # Untuk Linux/macOS
+    cp .env.example .env
+    ```
 
-## Installation Guide  
+4.  **Generate Kunci Aplikasi**
+    ```bash
+    php artisan key:generate
+    ```
 
-Follow these steps to set up Velstore:  
+5.  **Konfigurasi Database**
+    Buka file `.env` dan sesuaikan pengaturan database sesuai dengan konfigurasi lokal Anda.
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=anugerah
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 
-### **Install via Composer**  
-Run the following command to create a new Velstore project:
-```sh
-composer create-project velstorelabs/velstore
-```
+6.  **Jalankan Migrasi & Seeder**
+    Buat struktur tabel dan isi data awal (jika ada).
+    ```bash
+    php artisan migrate --seed
+    ```
 
-If you didn't have `.env` you can copy it from `.env.example`.
+7.  **Buat Symbolic Link untuk Storage**
+    Agar file yang diunggah (seperti gambar produk) dapat diakses dari web.
+    ```bash
+    php artisan storage:link
+    ```
 
-```sh
-cp .env.example .env
-```
+8.  **Kompilasi Aset Frontend**
+    ```bash
+    npm run dev
+    ```
 
-Create a new database and update the database credentials in `.env`. Run the following command to install Velstore:
-```sh
-php artisan install:velstore --with-import
-```
+9.  **Jalankan Server**
+    Anda bisa menggunakan server development bawaan Artisan atau mengaksesnya melalui Virtual Host yang dikonfigurasi di Laragon.
+    ```bash
+    php artisan serve
+    ```
+    Aplikasi akan berjalan di `http://127.0.0.1:8000`.
 
-### **Options**
-- `--with-import` Imports sample data to help you get started quickly.
+## Akses Panel Admin
 
-Start the Laravel server:
-```sh
-php artisan serve
-```
+- **URL Login**: `http://127.0.0.1:8000/login`
+- **Akun Default**:
+  - **Email**: `admin@example.com`
+  - **Password**: `password`
 
-If you found error `Vite manifest not found at`, you should run this in different terminal:
-```sh
-npm run dev
-```
+> **Catatan**: Akun admin default harus dibuat terlebih dahulu. Pastikan Anda memiliki `UserSeeder` yang membuat akun ini atau buat secara manual melalui registrasi (jika diaktifkan) atau Tinker.
 
-Your Velstore instance is now running! Open your browser and visit:
-```sh
-http://127.0.0.1:8000
-```
+## Rute Penting
 
-## Tech Stack
-- Backend: Laravel 10+
-- Database: MySQLi
-- Frontend: Blade (with Laravel UI)
-- Authentication: Laravel Sanctum
-- DataTables: Yajra Laravel Datatables
+- **Halaman Utama**: `/`
+- **Katalog Produk**: `/shop`
+- **Blog**: `/blog`
+- **Login Admin**: `/login`
+- **Dashboard Admin**: `/admin/dashboard`
+
+---
